@@ -1,0 +1,21 @@
+-- quest 29408 https://es.wowhead.com/quest=28149
+
+-- En la quest se tuvo que:
+--- Agregar 
+
+-- npc 53566 https://www.wowhead.com/npc=53566
+
+-- Se hace la quest autocompletada dado que ni idea de como mostrar el scroll a quemar en la posicion que debe aparecer
+-- Esto se debe arreglar luego, no se, unos meses de inspiracion después
+
+-- Se modifica la variable  
+UPDATE `creature_template` set `npcflag`=npcflag|2 where `entry`=53566;
+
+-- Se quita la mision del npc
+delete from `creature_questrelation` where `id`=53566 and `quest`=29408;
+
+-- Se agrega la mision del npc
+insert into `creature_questrelation` values (53566,29408);
+
+-- Se modifica la quest para que se autocomplete
+UPDATE `quest_template` set `Method`=0 where `id`=29408;

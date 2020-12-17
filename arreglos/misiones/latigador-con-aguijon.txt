@@ -1,0 +1,6 @@
+-- quest 25369 https://es.wowhead.com/quest=25369
+-- npc 7875 https://es.wowhead.com/npc=7875
+
+-- Se modifica la quest para que se autocomplete
+UPDATE `quest_template` set `Method`=0 where `id`=25369;
+

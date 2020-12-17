@@ -1,0 +1,5 @@
+-- quest 26374 https://es.wowhead.com/quest=26374/preparar-las-tropas-de-tierra
+-- npc 42641 https://es.wowhead.com/npc=42641/senor-de-la-guerra-krogg
+
+-- Se modifica la quest para que se autocomplete
+UPDATE `quest_template` set `Method`=0 where `id`=26374;

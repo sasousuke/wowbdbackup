@@ -1,0 +1,5 @@
+-- quest 27023 https://es.wowhead.com/quest=27023
+-- npc 37737 https://es.wowhead.com/npc=37737/caminasol-helaku
+
+-- Se modifica la quest para que se autocomplete
+UPDATE `quest_template` set `Method`=0 where `id`=27023;

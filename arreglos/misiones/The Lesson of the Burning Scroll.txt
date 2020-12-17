@@ -1,0 +1,10 @@
+-- quest 29408 https://www.wowhead.com/quest=29408
+
+-- Agregamos en la tabla creature el vinculo con creature_template del npc 59570 (burning-scroll-credit)
+-- para poder matarlo y que nos cuente como destruido
+
+insert into `creature` values (998134, 59570, 860, 5736, 5834, 1, 65535, 16480, 0, 1421.23, 3376.95, 192.073, 0, 30, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0);
+
+-- Cambiar el tipo de faction que tiene este npc para poder matarlo porque es amistoso
+
+select * from `creature_template` where `entry`=59570;

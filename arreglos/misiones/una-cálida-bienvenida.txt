@@ -1,0 +1,5 @@
+-- quest 27486 https://www.wowhead.com/quest=27486
+-- npc 48264 https://www.wowhead.com/npc=48264
+
+-- Se modifica la quest para que se autocomplete
+UPDATE `quest_template` set `Method`=0 where `id`=27486;
