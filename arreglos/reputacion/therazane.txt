@@ -1,0 +1,11 @@
+-- faction 1171 https://www.wowhead.com/faction=1171/therazane
+-- npc 43513 https://es.wowhead.com/npc=43513/tumbapilares-de-verlok
+-- npc 42924 https://es.wowhead.com/npc=42924/obrero-crepuscula
+-- npc 42917 https://es.wowhead.com/npc=42917/celador-del-anochecer-crepuscular
+-- npc 42823 https://es.wowhead.com/npc=42823/sacerdotisa-crepuscular
+
+-- Se agrega la reputacion al matar al npc, 20 de aumento de reputacion por cada npc eliminado
+insert into `creature_onkill_reputation` values (43513, 1171, 0, 7, 0, 20, 0, 0, 0, 0);
+insert into `creature_onkill_reputation` values (42924, 1171, 0, 7, 0, 20, 0, 0, 0, 0);
+insert into `creature_onkill_reputation` values (42917, 1171, 0, 7, 0, 20, 0, 0, 0, 0);
+insert into `creature_onkill_reputation` values (42823, 1171, 0, 7, 0, 20, 0, 0, 0, 0);
